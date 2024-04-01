@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.title {
+    color: white;
+    z-index: 10;
+}
+
+.title--main {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #ff7b16;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 25px;
+    color: white;
+    border: none;
+    z-index: 10;
+    cursor: pointer;
+    padding: 12px 24px;
+    font-weight: 700;
+    transition: background-color 0.4s ease;
+}
+
+.btn:hover {
+    background-color: #465b93;
+}
+
+.btn--main {
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.header {
+    border: 1px solid red;
+    height: 100vh;
+    background-image: url("./img/hero1.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.navbar {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid green;
+    margin: 0 auto;
+}
+
+
+.container_logo {
+    width: 50%;
+    border: 1px solid blue;
+}
+
+.img_wrapper {
+    width: 80px;
+}
+
+.navbar__list {
+    border: 1px solid blueviolet;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
+
+/*======================================*/
+/*==========SECCION SOBRE MI============*/
+/*======================================*/
+.sobremi_section {
+    width: 100%;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.sobremi_img_wrapper {
+    border: 1px solid green;
+    grid-column-start: 8;
+    grid-column-end: 11;
+    grid-row-start: 2;
+    grid-row-end: 6;
+}
+
+.sobremi_title {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+
+.sobremi_list {
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    font-size: 18px;
+    color: #777777;
+    line-height: 1.8;
+}
+
+.sobremi_description {
+    grid-column-start: 3;
+    grid-column-end: 7;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    font-size: 18px;
+    color: #777777;
+    line-height: 1.4;
+}
+
+/*======================================*/
+/*==========SECCION SERVICIOS============*/
+/*======================================*/
+.servicios_section {
+    width: 100%;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    margin-top: 50px;
+}
+
+.servicios_title {
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.servicios_description {
+    grid-column-start: 5;
+    grid-column-end: 10;
+    grid-row-start: 2;
+    line-height: 1.5;
+    color: #777777;
+    font-size: 17px;
+}
+
+.servicio_box:nth-child(3) {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 8;
+}
+
+.servicio_box:nth-child(4) {
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 4;
+    grid-row-end: 8;
+}
+
+.servicio_box:nth-child(5) {
+    grid-column-start: 9;
+    grid-column-end: 11;
+    grid-row-start: 4;
+    grid-row-end: 8;
+}
+
+.servicio_box p {
+    display: flex;
+    align-items: center;
+    color: black;
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.servicio_box ul {
+    color: #777777;
+    line-height: 1.7;
+    list-style: none;
+    font-size: 17px;
+}
+/*======================================*/
+/*==========SECCION TESTIMONIOS============*/
+/*======================================*/

@@ -1,39 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios de testing</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <header>
-        <div class="logo"></div>
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#sobremi">Sobre mi</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#testimonios">Testimonios</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+    <nav class="navbar">
+        <div class="container_logo">
+            <div class="img_wrapper">
+                <img src="./img/testing_logo1.jpg" alt="logo de una mariquita bajo una lupa">
+            </div>
+        </div>
+
+        <ul class="navbar__list">
+            <li>
+                <a href="#inicio">Inicio</a>
+            </li>
+            <li>
+                <a href="#sobremi">Sobre mi</a>
+            </li>
+            <li>
+                <a href="#servicios">Servicios</a>
+            </li>
+            <li>
+                <a href="#testimonios">Testimonios</a>
+            </li>
+            <li>
+                <a href="#contacto">Contacto</a>
+            </li>
         </ul>
-        <div class="hero"></div>
+    </nav>
+    <header class="header">
+        <h1 class="title title--main">Contrata servicios de testing a medida</h1>
+        <button class="btn btn--main">
+            Solicitar
+        </button>
     </header>
     <main>
-        <section id="sobremi">
-            <h2 class="subtitulo_title">Sobre mi</h2>
-            <ul>
-                <li>Lorem ipsum dolor sit.</li>
-                <li>Lorem ipsum dolor sit.</li>
-                <li>Lorem ipsum dolor sit.</li>
-                <li>Lorem ipsum dolor sit.</li>
-            </ul>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio minus sed eum aliquam a, beatae aut sit eius sequi soluta incidunt ad et accusantium in facere dolores quibusdam, libero repudiandae.</p>
+        <section id="sobremi" class="sobremi_section">
+                <h2 class="sobremi_title">Sobre mi</h2>
+                <ul class="sobremi_list">
+                    <li>N años en el mercado.</li>
+                    <li>Servicio de calidad comprobable.</li>
+                    <li>Atención personalizada.</li>
+                    <li>Precios accesibles.</li>
+                </ul>
+                <p class="sobremi_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio minus sed eum aliquam a, beatae aut sit
+                    eius sequi soluta incidunt ad et accusantium in facere dolores quibusdam, libero repudiandae.</p>
+            
+
+            
+                <div class="sobremi_img_wrapper">
+                    <img src="./img/sobremi.jpg" alt="una chica chinita frente a una pc haciendo testing">
+                </div>
+            
         </section>
 
-        <section id="servicios">
-            <h2 id="servicios_title">Servicios</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, sapiente ea fugiat optio repudiandae exercitationem ducimus odit, doloremque autem quisquam veniam accusamus placeat ratione saepe. Architecto saepe amet veritatis quidem!</p>
+        <section id="servicios" class="servicios_section">
+            <h2 class="servicios_title">Servicios</h2>
+            <p class="servicios_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, sapiente ea fugiat optio repudiandae
+                exercitationem ducimus odit, doloremque autem quisquam veniam accusamus placeat ratione saepe.
+                Architecto saepe amet veritatis quidem!</p>
             <article class="servicio_box">
+                <div class="servicio_img">
+                    <img src="./img/manual_testing.png" alt="">
+                </div>
                 <p>Testing manual</p>
                 <ul>
                     <Li>Exploratorio</Li>
@@ -42,6 +78,9 @@
                 </ul>
             </article>
             <article class="servicio_box">
+                <div class="servicio_img">
+                    <img src="./img/automation_testing.png" alt="">
+                </div>
                 <p>Testing automatizado</p>
                 <ul>
                     <li>Automatización de suite de smoke</li>
@@ -49,6 +88,9 @@
                 </ul>
             </article>
             <article class="servicio_box">
+                <div class="servicio_img">
+                    <img src="./img/performance_testing1.png" alt="">
+                </div>
                 <p>Testing de performance</p>
                 <ul>
                     <li>Pruebas de stress</li>
@@ -63,7 +105,9 @@
             <div class="testimonios_carrousel">
                 <div class="testimonio_box">
                     <p>testimonio1</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis voluptas, iusto amet minima vel impedit possimus laboriosam autem hic, fugiat officiis eos quos! Pariatur id fuga delectus illo quasi. A?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis voluptas, iusto amet minima vel
+                        impedit possimus laboriosam autem hic, fugiat officiis eos quos! Pariatur id fuga delectus illo
+                        quasi. A?</p>
                     <img src="" alt="">
                 </div>
             </div>
@@ -93,4 +137,5 @@
         &copy; 2024 testing Mandy, Todos los derechos reservados
     </footer>
 </body>
+
 </html>
