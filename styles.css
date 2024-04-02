@@ -16,7 +16,8 @@ img {
 
 .title--main {
     font-size: 42px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    width: 50%;
 }
 
 .btn {
@@ -100,35 +101,36 @@ img {
 /*======================================*/
 .sobremi_section {
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(6, 1fr);
+    margin-top: 40px;
 }
 
 .sobremi_img_wrapper {
-    border: 1px solid green;
     grid-column-start: 8;
     grid-column-end: 11;
     grid-row-start: 2;
-    grid-row-end: 6;
+    grid-row-end: 5;
 }
 
 .sobremi_title {
     grid-column-start: 3;
     grid-column-end: 5;
-    grid-row-start: 2;
+    grid-row-start: 1;
     display: flex;
     align-items: center;
-    font-size: 30px;
+    font-size: 35px;
+    color: #465b93;
 }
 
 .sobremi_list {
     grid-column-start: 3;
     grid-column-end: 6;
-    grid-row-start: 3;
-    grid-row-end: 5;
-    font-size: 18px;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    font-size: 19px;
     color: #777777;
     line-height: 1.8;
 }
@@ -136,11 +138,12 @@ img {
 .sobremi_description {
     grid-column-start: 3;
     grid-column-end: 7;
-    grid-row-start: 5;
+    grid-row-start: 3;
     grid-row-end: 6;
     font-size: 18px;
     color: #777777;
     line-height: 1.4;
+    margin-top: 30px;
 }
 
 /*======================================*/
@@ -152,7 +155,6 @@ img {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
-    margin-top: 50px;
 }
 
 .servicios_title {
@@ -161,8 +163,9 @@ img {
     grid-row-start: 1;
     display: flex;
     align-items: center;
-    font-size: 30px;
-    margin-bottom: 20px;
+    font-size: 35px;
+    margin-bottom: 35px;
+    color: #465b93;
 }
 
 .servicios_description {
@@ -213,3 +216,137 @@ img {
 /*======================================*/
 /*==========SECCION TESTIMONIOS============*/
 /*======================================*/
+.testimonios_section {
+    width: 100%;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.testimonios_title {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    color: #465b93;
+    margin-bottom: 20px;
+}
+
+.testimonios_carrousel {
+    display: flex;
+    justify-content: space-between;
+    grid-column-start: 3;
+    grid-column-end: 11;
+    grid-row-start: 3;
+    grid-row-end: 6;
+}
+
+.testimonio_nombre {
+    display: flex;
+    align-items: center;
+    color: #6B6B6B;
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.testimonio_box {
+    padding: 30px;
+    width: 45%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.testimonio_description {
+    line-height: 1.5;
+    color: #777777;
+    font-size: 17px;
+}
+
+/*======================================*/
+/*==========SECCION CONTACTO============*/
+/*======================================*/
+.contacto_section {
+    width: 100%;
+    /*height: 80vh;*/
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    border: 2px solid red;
+}
+
+.contacto_title {
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    margin-bottom: 35px;
+    color: #465b93;
+}
+
+form {
+    border: 2px solid green;
+    grid-column-start: 3;
+    grid-column-end: 11;
+    grid-row-start: 2;
+    grid-row-end: 7;
+}
+
+#nombre {
+    grid-column-start: 3;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#apellido {
+    grid-column-start: 3;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#email {
+    grid-column-start: 3;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+#telefono {
+    grid-column-start: 3;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+#comentario {
+    grid-column-start: 3;
+    grid-column-end: 11;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+input {
+    width: 45%;
+    border: 2px solid blue;
+    padding: 14px;
+    border-radius: 4px;
+}
+
+#comentario {
+    border: 2px solid blue;
+    width: 100%;
+}
+
+.btn--enviar {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 7;
+} 
