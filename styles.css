@@ -9,6 +9,36 @@ img {
     max-width: 100%;
 }
 
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
 .title {
     color: white;
     z-index: 10;
@@ -18,6 +48,12 @@ img {
     font-size: 42px;
     margin-bottom: 50px;
     width: 50%;
+}
+
+.linea--naranja {
+    background-color: #ff7b16;
+    width: 60px;
+    height: 5px;
 }
 
 
@@ -126,10 +162,16 @@ img {
     grid-column-start: 3;
     grid-column-end: 5;
     grid-row-start: 1;
-    display: flex;
     align-items: center;
     font-size: 35px;
     color: #465b93;
+}
+
+.sobremi_title:after {
+    content: ""; 
+    display: block; 
+    width: 10%; 
+    border-bottom: 4px solid #ff7b16; 
 }
 
 .sobremi_list {
@@ -162,7 +204,7 @@ img {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
-    background-color: #ececec;
+    background-color: #f4f8fa;
     padding-top: 20px;
     padding-bottom: 40px;
 }
@@ -171,11 +213,17 @@ img {
     grid-column-start: 7;
     grid-column-end: 8;
     grid-row-start: 1;
-    display: flex;
     align-items: center;
     font-size: 35px;
     margin-bottom: 35px;
     color: #465b93;
+}
+
+.servicios_title:after {
+    content: ""; 
+    display: block; 
+    width: 20%; 
+    border-bottom: 4px solid #ff7b16; 
 }
 
 .servicios_description {
@@ -223,6 +271,7 @@ img {
     list-style: none;
     font-size: 17px;
 }
+
 /*======================================*/
 /*==========SECCION TESTIMONIOS============*/
 /*======================================*/
@@ -238,11 +287,16 @@ img {
     grid-column-start: 3;
     grid-column-end: 5;
     grid-row-start: 2;
-    display: flex;
-    align-items: center;
     font-size: 35px;
     color: #465b93;
     margin-bottom: 20px;
+}
+
+.testimonios_title:after {
+    content: ""; 
+    display: block; 
+    width: 10%; 
+    border-bottom: 4px solid #ff7b16; 
 }
 
 .testimonios_carrousel {
@@ -286,17 +340,23 @@ img {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(6, 1fr);
     border: 2px solid red;
+    background-color: #f4f8fa;
 }
 
 .contacto_title {
     grid-column-start: 7;
     grid-column-end: 8;
     grid-row-start: 1;
-    display: flex;
-    align-items: center;
     font-size: 35px;
     margin-bottom: 35px;
     color: #465b93;
+}
+
+.contacto_title:after {
+    content: ""; 
+    display: block; 
+    width: 20%; 
+    border-bottom: 4px solid #ff7b16; 
 }
 
 form {
@@ -359,7 +419,7 @@ input {
     grid-column-end: 5;
     grid-row-start: 6;
     grid-row-end: 7;
-} 
+}
 
 
 /*======================================*/
