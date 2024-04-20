@@ -136,15 +136,22 @@
 
         <section id="contacto" class="contacto_section">
             <h2 class="contacto_title">Contacto</h2>
-            <form action="#">
-                <input type="text" name="nombre" id="nombre" placeholder="Sherlock">
+            <form class="form_contacto" action="#">
+                
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" >
+                
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" >
 
-                <input type="text" name="apellido" id="apellido" placeholder="Holmes">
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" id="apellido" >
 
-                <input type="email" name="email" id="email" placeholder="sholmes@email.com">
 
-                <input type="tel" name="telefono" id="telefono" placeholder="42245612">
+                <label for="telefono">teléfono</label>
+                <input type="tel" name="telefono" id="telefono" >
 
+                <label for="comentario">Mensaje</label>
                 <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
 
                 <input type="button" class="btn btn--enviar" value="Enviar">
